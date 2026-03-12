@@ -34,8 +34,14 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Quelle difference entre `environment` et `env_file` ?
+    `environment` permet de définir des variables directement dans le fichier Compose.  
+    `env_file` permet de charger les variables depuis un fichier `.env`
+
 - Pourquoi un volume nomme est-il utile pour la base de donnees ?
+    Il permet de garder les données même si le conteneur est supprimé
+
 - Que garantit `depends_on` et que ne garantit-il pas ?
+    `depends_on` permet de garder les données même si le conteneur est supprimé
 
 ## Criteres de validation
 

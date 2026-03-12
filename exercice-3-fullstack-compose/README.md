@@ -39,8 +39,13 @@ Les commandes doivent etre fournies dans un fichier separe `COMMANDS.md`.
 ## Questions de reflexion
 
 - Pourquoi `api` doit-il etre connecte a deux reseaux dans cette architecture ?
+   Parce qu’il doit communiquer avec le front sur le réseau `frontend` et avec la base sur le réseau `backend`
+
 - Quel interet de combiner `build` et `image` sur un meme service ?
+   Ça permet de construire l’image localement tout en lui donnant un nom
+
 - Pourquoi la base ne doit-elle pas etre publiee avec `ports` dans ce cas ?
+   Parce qu’elle doit rester accessible seulement depuis les autres services de la stack
 
 ## Criteres de validation
 
